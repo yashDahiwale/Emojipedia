@@ -1,0 +1,41 @@
+.box {
+    transition: all 200ms ease-in-out;
+    /* cursor: pointer; */
+    width: 230px;
+    height: 180px;
+    overflow: hidden;
+}
+
+/* .box:hover{
+    transform: scale(1.1);
+} */
+
+.alert svg {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.alert {
+    height: 50px !important;
+    width: fit-content !important;
+    display: none;
+}
+
+.emoji {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    animation: emojiAnimation 6s linear;
+}
+
+@keyframes emojiAnimation {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-250px);
+        opacity: 1;
+    }
+}
